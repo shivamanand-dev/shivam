@@ -4,21 +4,14 @@ export const StyledLanding = styled.section`
   .hero {
     height: 100vh;
     overflow: hidden;
-    .heroImages {
-      height: 150vh;
-      width: 50vw;
-      overflow: hidden;
+    .circleIllustrator {
+      height: 100vh;
+      width: auto;
+      animation: circle 15s linear infinite;
       position: absolute;
-      right: 0;
-      top: -25%;
+      right: -20%;
+      top: -0%;
       z-index: -999999;
-      img {
-        height: 100% !important;
-        width: auto;
-        position: relative;
-        z-index: -99999;
-        animation: circle 15s linear infinite;
-      }
     }
   }
 

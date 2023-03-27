@@ -1,8 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+
 body {
   background: #0d1b2a;
   color: #e0e1dd;
   margin: 0;
   padding: 0;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Allerta Stencil", sans-serif;
+  src: url("/public/fonts/AllertaStencil-Regular.ttf");
+  font-weight: 400;
 }
 
 ::-webkit-scrollbar {
@@ -17,12 +26,20 @@ body {
 
 .flex {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .w-50 {
   width: 50%;
 }
+
+h1 {
+  font-size: 5rem;
+  font-family: "Allerta Stencil", sans-serif;
+}
+
+/* Animation */
+
 @keyframes circle {
   0% {
     transform: rotate(0deg);
