@@ -1,0 +1,33 @@
+body {
+  background: #0d1b2a;
+  color: #e0e1dd;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.w-50 {
+  width: 50%;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
