@@ -10,13 +10,14 @@ export const StyledLanding = styled.section`
     width: 100vw;
     color: #fff;
     position: relative;
-    z-index: 1;
+    z-index: 1 !important;
+    opacity: 1;
   }
   .particles {
     position: fixed;
     top: 0;
     height: 100vh;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.75;
   }
 `;

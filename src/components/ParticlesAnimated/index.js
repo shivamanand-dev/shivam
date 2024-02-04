@@ -6,7 +6,7 @@ function ParticlesAnimated() {
   const particlesOptions = {
     background: {
       color: {
-        value: "#0D1B2A",
+        value: "transparent",
       },
     },
     fpsLimit: 120,
@@ -24,7 +24,7 @@ function ParticlesAnimated() {
       },
       modes: {
         push: {
-          quantity: 4,
+          quantity: 2,
         },
         repulse: {
           distance: 100,
@@ -58,7 +58,7 @@ function ParticlesAnimated() {
           enable: true,
           area: 800,
         },
-        value: 80,
+        value: 10,
       },
       opacity: {
         value: 1,
