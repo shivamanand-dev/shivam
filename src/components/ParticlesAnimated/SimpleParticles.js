@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 
-function SimpleParticles() {
+function SimpleParticles({ options }) {
   const particlesOptions = {
     background: {
       color: {
@@ -64,10 +64,54 @@ function SimpleParticles() {
         value: 1,
       },
       shape: {
-        type: "circle",
+        type: ["image"],
+        image: [
+          {
+            src: "/images/react.svg",
+            height: 50,
+            width: 50,
+          },
+          {
+            src: "/images/html.svg",
+            height: 30,
+            width: 30,
+          },
+          {
+            src: "/images/css.svg",
+            height: 25,
+            width: 25,
+          },
+          {
+            src: "/images/javascript.svg",
+            height: 50,
+            width: 50,
+          },
+          {
+            src: "/images/visual-studio-code.svg",
+            height: 50,
+            width: 50,
+          },
+          {
+            src: "/images/nextjs.svg",
+            height: 60,
+            width: 100,
+          },
+          {
+            src: "/images/azure.svg",
+            height: 60,
+            width: 60,
+          },
+        ],
       },
       size: {
-        value: { min: 1, max: 5 },
+        value: { min: 1, max: 30 },
+        random: false,
+        anim: {
+          enable: false,
+          speed: 4,
+          size_min: 10,
+          sync: false,
+        },
       },
     },
     detectRetina: true,
@@ -90,7 +134,7 @@ function SimpleParticles() {
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      options={particlesOptions}
+      options={options || particlesOptions}
     />
   );
 }

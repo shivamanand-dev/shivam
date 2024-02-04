@@ -21,8 +21,8 @@ export const StyledShapesAnimated = styled.section`
   }
   .cross {
     position: absolute;
-    left: 2%;
     top: 60%;
+    left: 2%;
     z-index: 0;
     animation: rotate 30s infinite linear;
   }
