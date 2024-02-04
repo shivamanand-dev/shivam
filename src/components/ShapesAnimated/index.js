@@ -15,8 +15,22 @@ function ShapesAnimated() {
       <Image
         className="rectangle"
         src="/images/Rectangle.svg"
-        width={205}
-        height={177.53}
+        width={150}
+        height={150}
+        alt=""
+      />
+      <Image
+        className="cross"
+        src="/images/cross.svg"
+        width={100}
+        height={100}
+        alt=""
+      />
+      <Image
+        className="circle"
+        src="/images/circle.svg"
+        width={200}
+        height={200}
         alt=""
       />
     </StyledShapesAnimated>

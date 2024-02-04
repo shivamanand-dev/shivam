@@ -15,9 +15,24 @@ export const StyledShapesAnimated = styled.section`
   .rectangle {
     position: absolute;
     right: 5%;
-    top: 25%;
+    bottom: 15%;
+    z-index: 0;
+    transform: rotate(45deg);
+  }
+  .cross {
+    position: absolute;
+    left: 2%;
+    top: 60%;
     z-index: 0;
     animation: rotate 30s infinite ease;
+  }
+  .circle {
+    position: absolute;
+    right: -100px;
+    top: 5%;
+    z-index: 0;
+    transform: rotate(270deg);
+    /* animation: rotate 30s infinite ease; */
   }
 
   @keyframes moveUpDown {
