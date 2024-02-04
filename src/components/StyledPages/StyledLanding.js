@@ -10,7 +10,7 @@ export const StyledLanding = styled.section`
     width: 100vw;
     color: #fff;
     position: relative;
-    z-index: 1 !important;
+    z-index: 0 !important;
     opacity: 1;
   }
   .particles {

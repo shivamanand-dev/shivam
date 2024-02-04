@@ -12,6 +12,13 @@ function ShapesAnimated() {
         height={177.53}
         alt=""
       />
+      <Image
+        className="rectangle"
+        src="/images/Rectangle.svg"
+        width={205}
+        height={177.53}
+        alt=""
+      />
     </StyledShapesAnimated>
   );
 }
