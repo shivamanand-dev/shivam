@@ -15,8 +15,8 @@ function ShapesAnimated() {
       <Image
         className="rectangle"
         src="/images/Rectangle.svg"
-        width={150}
-        height={150}
+        width={100}
+        height={100}
         alt=""
       />
       <Image

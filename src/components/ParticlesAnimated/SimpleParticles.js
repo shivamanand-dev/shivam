@@ -101,6 +101,16 @@ function SimpleParticles({ options }) {
             height: 60,
             width: 60,
           },
+          {
+            src: "/images/nodejs-icon.svg",
+            height: 60,
+            width: 60,
+          },
+          {
+            src: "/images/mongodb-icon.svg",
+            height: 60,
+            width: 60,
+          },
         ],
       },
       size: {
