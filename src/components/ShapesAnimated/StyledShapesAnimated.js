@@ -24,7 +24,7 @@ export const StyledShapesAnimated = styled.section`
     left: 2%;
     top: 60%;
     z-index: 0;
-    animation: rotate 30s infinite ease;
+    animation: rotate 30s infinite linear;
   }
   .circle {
     position: absolute;
