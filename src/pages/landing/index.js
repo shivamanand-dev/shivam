@@ -9,9 +9,10 @@ const Landing = () => {
     <StyledLanding>
       <div className="particles">
         <SimpleParticles />
-        <MaskParticles />
+        <div className="maskParticle">
+          <MaskParticles />
+        </div>
       </div>
-      {/* <div className="maskParticle"></div> */}
       <div className="shapes">
         <ShapesAnimated />
       </div>

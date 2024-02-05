@@ -22,14 +22,19 @@ export const StyledLanding = styled.section`
     z-index: 2;
     opacity: 0.75;
   }
-  .maskParticle {
-    position: fixed;
+  .maskParticle #tsparticlesd {
+    position: relative;
     top: 0;
-    height: 100vh;
-    width: 100vw;
+    /* height: 50vh !important;
+    width: 50vw !important; */
     z-index: 3;
     canvas {
-      opacity: 0.5 !important;
+      opacity: 0.25 !important;
+
+      :hover {
+        opacity: 1;
+        display: none;
+      }
     }
   }
 `;

@@ -9,8 +9,8 @@ export const StyledShapesAnimated = styled.section`
     left: 5%;
     padding-top: 5%;
     opacity: 0.75;
-    animation: moveUpDown 30s infinite ease-in-out;
     z-index: 0;
+    animation: moveUpDown 30s infinite ease-in-out;
   }
 
   .rectangle {
@@ -31,10 +31,10 @@ export const StyledShapesAnimated = styled.section`
     position: absolute;
     right: -100px;
     top: 5%;
-    z-index: 0;
     transform: rotate(270deg);
-    opacity: 0.5;
+    z-index: 0;
     /* animation: rotate 30s infinite ease; */
+    opacity: 0.5;
   }
 
   @keyframes moveUpDown {

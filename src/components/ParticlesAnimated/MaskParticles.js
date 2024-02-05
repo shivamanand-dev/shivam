@@ -3,7 +3,7 @@ import Particles from "react-tsparticles";
 import { loadPolygonMaskPlugin } from "tsparticles-plugin-polygon-mask";
 import { loadSlim } from "tsparticles-slim";
 
-function MaskParticles() {
+function MaskParticles({ imgUrl = "/images/photo-shivam.svg" }) {
   const particleOptions = {
     background: {
       color: {
@@ -123,7 +123,7 @@ function MaskParticles() {
       },
       scale: 1,
       type: "inline",
-      url: "/images/Shivam.svg",
+      url: imgUrl,
     },
   };
   const particlesInit = useCallback(async (engine) => {
