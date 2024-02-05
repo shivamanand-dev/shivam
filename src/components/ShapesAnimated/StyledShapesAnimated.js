@@ -8,9 +8,9 @@ export const StyledShapesAnimated = styled.section`
     position: absolute;
     left: 5%;
     padding-top: 5%;
-    z-index: 0;
     opacity: 0.75;
     animation: moveUpDown 30s infinite ease-in-out;
+    z-index: 0;
   }
 
   .rectangle {
