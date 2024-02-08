@@ -29,10 +29,10 @@ export const StyledShapesAnimated = styled.section`
   }
   .circle {
     position: absolute;
-    right: -100px;
     top: 5%;
-    transform: rotate(270deg);
+    right: -100px;
     z-index: 0;
+    transform: rotate(270deg);
     /* animation: rotate 30s infinite ease; */
     opacity: 0.5;
   }
