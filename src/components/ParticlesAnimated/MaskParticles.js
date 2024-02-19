@@ -111,7 +111,7 @@ function MaskParticles({ imgUrl = "/images/Shivam.svg" }) {
     polygon: {
       draw: {
         enable: true,
-        lineColor: "rgba(255,255,255,0.2)",
+        lineColor: "rgba(255,255,255,0.75)",
         lineWidth: 1,
       },
       enable: true,

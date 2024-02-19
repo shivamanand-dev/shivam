@@ -3,26 +3,27 @@ import styled from "styled-components";
 export const StyledShapesAnimated = styled.section`
   position: relative;
   width: 100vw;
+  background-color: transparent;
   height: 100vh;
   .triangle {
     position: absolute;
     left: 5%;
     padding-top: 5%;
-    opacity: 0.75;
     z-index: 0;
+    opacity: 0.75;
     animation: moveUpDown 30s infinite ease-in-out;
   }
 
   .rectangle {
-    position: absolute;
     top: 60%;
+    position: absolute;
     left: 2%;
     z-index: 0;
     transform: rotate(45deg);
   }
   .cross {
-    position: absolute;
     right: 5%;
+    position: absolute;
     bottom: 15%;
     z-index: 0;
     animation: rotate 30s infinite linear;
