@@ -56,16 +56,19 @@ export const StyledLanding = styled.section`
     }
   }
   .itsMe {
-    width: 100%;
     position: fixed;
+    width: max-content;
     top: 0;
-    z-index: 10;
+    z-index: ${(props) => props.itsMeIndex};
+    left: 50%;
+    transform: translate(-50%);
     h1 {
       max-width: max-content;
       margin: 0 auto;
       margin-top: 10%;
       font-size: 8rem;
       color: #e0e1dd57;
+      padding-top: 5rem;
     }
 
     &:hover {
@@ -93,6 +96,12 @@ export const StyledLanding = styled.section`
 
     p {
       text-align: justify;
+    }
+
+    .section {
+      position: relative;
+      z-index: 11;
+      background: linear-gradient(to bottom, #1f1f1f, #2f2f2f);
     }
   }
 `;
