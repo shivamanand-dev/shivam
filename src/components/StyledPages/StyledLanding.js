@@ -3,26 +3,9 @@ import styled from "styled-components";
 export const StyledLanding = styled.section`
   position: relative;
   height: 100vh;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   overflow-x: hidden;
 
-  .shivamPic {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%);
-    height: 100vh;
-    width: max-content;
-    z-index: -1 !important;
-    opacity: 0.2;
-    text-align: center;
-    display: none;
-    img {
-      height: 100vh;
-      text-align: center;
-      margin: 0 auto;
-    }
-  }
   .shapes {
     height: 100vh;
     width: 100vw;
@@ -59,7 +42,7 @@ export const StyledLanding = styled.section`
     position: fixed;
     width: max-content;
     top: 0;
-    z-index: ${(props) => props.itsMeIndex};
+    /* z-index: ${(props) => props.itsMeIndex}; */
     left: 50%;
     transform: translate(-50%);
     h1 {
@@ -69,14 +52,6 @@ export const StyledLanding = styled.section`
       font-size: 8rem;
       color: #e0e1dd57;
       padding-top: 5rem;
-    }
-
-    &:hover {
-      .shivamPic {
-        display: block;
-        transition: 0.5s;
-        animation: blink 0.2s ease;
-      }
     }
   }
   .body {
