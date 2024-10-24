@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledLanding = styled.section`
   position: relative;
   height: 100vh;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
   overflow-x: hidden;
 
   .shapes {
@@ -41,7 +41,7 @@ export const StyledLanding = styled.section`
   .itsMe {
     position: fixed;
     width: max-content;
-    top: 0;
+    top: 10%;
     /* z-index: ${(props) => props.itsMeIndex}; */
     left: 50%;
     transform: translate(-50%);
@@ -71,12 +71,6 @@ export const StyledLanding = styled.section`
 
     p {
       text-align: justify;
-    }
-
-    .section {
-      position: relative;
-      z-index: 11;
-      background: linear-gradient(to bottom, #1f1f1f, #2f2f2f);
     }
   }
 `;

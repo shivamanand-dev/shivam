@@ -1,13 +1,54 @@
-// import Image from "next/image";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useRef } from "react";
 
-// eslint-disable-next-line simple-import-sort/imports
+import BodySection from "@/components/BodySection";
 import { MaskParticles, SimpleParticles } from "@/components/ParticlesAnimated";
 import ShapesAnimated from "@/components/ShapesAnimated";
 import { StyledLanding } from "@/components/StyledPages";
 
 const Landing = () => {
+  const bodyContainer = useRef(null);
+  const bodyContent = useRef(null);
+
+  useGSAP(
+    () => {
+      gsap.registerPlugin(ScrollTrigger);
+
+      if (bodyContainer.current) {
+        // let introHeight = bodyContainer.current.clientHeight;
+        // let offset = window.innerHeight - introHeight;
+        // setupSTs(offset);
+
+        ScrollTrigger.create({
+          trigger: bodyContent.current,
+          start: "top+=2 bottom",
+          onToggle: (self) => console.log("toggled, isActive:", self.isActive),
+          onUpdate: (self) => {
+            console.log(
+              "progress:",
+              self.progress.toFixed(3),
+              "direction:",
+              self.direction,
+              "velocity",
+              self.getVelocity()
+            );
+          },
+          onEnter: () => console.log("enjkter"),
+          // pin: bodyContent.current,
+        });
+      }
+
+      console.log("gv");
+    }
+    // {
+    //   scope: bodyContent,
+    // }
+  ); // defaults to an empty dependency array '[]' and no scoping.
+
   return (
-    <StyledLanding>
+    <StyledLanding ref={bodyContainer}>
       <div className="background">
         <div className="particles">
           <SimpleParticles />
@@ -23,46 +64,12 @@ const Landing = () => {
       <div className="itsMe">
         <h1>Hey, I am</h1>
       </div>
+
       <div className="body">
         <div className="hero"></div>
 
-        <div className="section">
-          <div className="wrapper">
-            <h2>Who am I?</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-              voluptatem officia excepturi fugiat cupiditate quaerat, adipisci
-              perspiciatis, impedit eaque odit optio at vitae iure, quasi odio
-              similique. Error, veniam dolorem?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-              voluptatem officia excepturi fugiat cupiditate quaerat, adipisci
-              perspiciatis, impedit eaque odit optio at vitae iure, quasi odio
-              similique. Error, veniam dolorem?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-              voluptatem officia excepturi fugiat cupiditate quaerat, adipisci
-              perspiciatis, impedit eaque odit optio at vitae iure, quasi odio
-              similique. Error, veniam dolorem?
-            </p>{" "}
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-              voluptatem officia excepturi fugiat cupiditate quaerat, adipisci
-              perspiciatis, impedit eaque odit optio at vitae iure, quasi odio
-              similique. Error, veniam dolorem?
-            </p>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-              voluptatem officia excepturi fugiat cupiditate quaerat, adipisci
-              perspiciatis, impedit eaque odit optio at vitae iure, quasi odio
-              similique. Error, veniam dolorem?
-            </p>
-            <p>
-              <img src="/images/Polygon.svg" alt="" />
-            </p>
-          </div>
+        <div className="section" ref={bodyContent}>
+          <BodySection />
         </div>
       </div>
     </StyledLanding>
